@@ -305,7 +305,7 @@ export default function App() {
           <div className="flex-1 flex flex-col lg:flex-row overflow-hidden">
             
             {/* Columna Izquierda: Detalle de Consumo */}
-            <div className="flex-[2] flex flex-col border-r border-slate-200 bg-slate-50 overflow-hidden">
+            <div className="flex-2 flex flex-col border-r border-slate-200 bg-slate-50 overflow-hidden">
               
               {/* Sección de Agregar Item */}
               {!esPedidoCompletado && (
@@ -377,7 +377,7 @@ export default function App() {
                         <Button 
                           onClick={agregarItemCarta} 
                           disabled={!nuevoItem.platoId}
-                          className="w-full h-[38px] !px-0 bg-indigo-600 hover:bg-indigo-700"
+                          className="w-full h-[38px] px-0! bg-indigo-600 hover:bg-indigo-700"
                         >
                           <Plus className="w-5 h-5" />
                         </Button>
@@ -429,7 +429,7 @@ export default function App() {
                         <Button 
                           onClick={agregarItemPeso} 
                           disabled={!datosPeso.gramos}
-                          className="w-full h-[38px] !px-0 bg-indigo-600 hover:bg-indigo-700"
+                          className="w-full h-[38px] px-0! bg-indigo-600 hover:bg-indigo-700"
                         >
                           <Plus className="w-5 h-5" />
                         </Button>
@@ -801,7 +801,7 @@ export default function App() {
 
         {/* KPIs */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <Card className="p-6 bg-gradient-to-br from-indigo-500 to-indigo-700 text-white border-none">
+          <Card className="p-6 bg-linear-to-br from-indigo-500 to-indigo-700 text-white border-none">
             <p className="text-indigo-100 text-sm font-medium mb-1">Total Ingresos</p>
             <h3 className="text-3xl font-bold">S/ {totalIngresos.toFixed(2)}</h3>
           </Card>
